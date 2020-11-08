@@ -1,8 +1,8 @@
 {
-    "name": "City helper",
+    "name": "city_helper",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://pshepelenko-cityhelper.glitch.me/",
+    /*"homepage": "https://pshepelenko-cityhelper.glitch.me/", */
     "dependencies": {
         "bootstrap": "4.1.3",
         "history": "4.7.2",
