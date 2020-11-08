@@ -39,9 +39,7 @@ const Cards = () => {
                             <CardText><b>Награда:</b> 10 баллов</CardText>
                             <CardText><b>Дата старта:</b> 1 мая 2020</CardText>
                             <CardText><b>Дата окончания:</b> 1 июня 2021</CardText>
-                            <CardText>
-                                <small className="text-muted">Last updated 3 mins ago</small>
-                            </CardText>
+                            <Button>Остановить</Button>
                         </CardBody>
                     </Card>
                 </Col>
