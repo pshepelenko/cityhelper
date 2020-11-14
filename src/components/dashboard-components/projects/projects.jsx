@@ -11,7 +11,8 @@ import {
     CardTitle,
     CardSubtitle,
     Input,
-    Table
+    Table,
+    Badge
 } from 'reactstrap';
 
 const Projects = () => {
@@ -41,9 +42,9 @@ const Projects = () => {
                 <Table className="no-wrap v-middle" responsive>
                     <thead>
                         <tr className="border-0">
+                            <th className="border-0">ID</th>
                             <th className="border-0">Название</th>
                             <th className="border-0">Категория</th>
-
                             <th className="border-0">Статус</th>
                             <th className="border-0">Необработано</th>
                             <th className="border-0">Всего</th>
@@ -51,6 +52,7 @@ const Projects = () => {
                     </thead>
                     <tbody>
                         <tr>
+                            <td>10234</td>
                             <td>
                                 <div className="d-flex no-block align-items-center">
                                         <div className="">
@@ -60,17 +62,20 @@ const Projects = () => {
                             <td>Экология</td>
 
                             <td>
-                                <i className="fa fa-circle text-orange" id="tlp1"></i>
+                                {/*<i className="fa fa-circle text-orange" id="tlp1"></i>*/}
+                                <Badge color="success" >
+                                    Активно
+                                </Badge>
 
                             </td>
                             <td>5</td>
                             <td className="blue-grey-text  text-darken-4 font-medium">15</td>
                         </tr>
                         <tr>
+                            <td>11645</td>
                             <td>
                                 <div className="d-flex no-block align-items-center">
-                                     
-                                    
+                                                                      
                                     <div className="">
                                     <a href="#/task2"><h5 className="mb-0 font-16 font-medium"></h5><span>Опрос по поводу изменения транспортной развязки на ул. Кирова</span></a></div>
                                 </div>
@@ -78,13 +83,15 @@ const Projects = () => {
                             <td>Опросы</td>
 
                             <td>
-                                <i className="fa fa-circle text-success" id="tlp2"></i>
-
+                                <Badge color="success" >
+                                    Активно
+                                </Badge>
                             </td>
                             <td>0</td>
                             <td className="blue-grey-text  text-darken-4 font-medium">120</td>
                         </tr>
                         <tr>
+                            <td>11432</td>
                             <td>
                                 <div className="d-flex no-block align-items-center">
                                         <div className="">
@@ -94,7 +101,9 @@ const Projects = () => {
                             <td>Дороги</td>
 
                             <td>
-                                <i className="fa fa-circle text-success" id="tlp3"></i>
+                                <Badge color="success" >
+                                    Активно
+                                </Badge>
 
                             </td>
                             <td>3</td>

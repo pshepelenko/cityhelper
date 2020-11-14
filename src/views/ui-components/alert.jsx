@@ -4,211 +4,122 @@ import {
     UncontrolledAlert,
     Card,
     CardBody,
-    CardTitle
+    CardTitle,
+    CardSubtitle,
+    Button,
+    Row,
+    Col,
+    Input,
+    Table,
+    Badge
 } from 'reactstrap';
+import { SalesSummary, Projects, Feeds } from 'components/dashboard-components';
 
 const Alerts = () => {
-    // For Dismiss Button with Alert
-    const [visible, setVisible] = useState(true);
-
-    const onDismiss = () => {
-        setVisible(false);
-    }
-
     return (
         <div>
             {/* --------------------------------------------------------------------------------*/}
             {/* Start Inner Div*/}
             {/* --------------------------------------------------------------------------------*/}
+            <Row>
+                <Col sm={6} lg={8}>
+                    <SalesSummary />
+                </Col>
+            </Row>
+            <Card>
+            <CardBody>
+                <div className="d-flex align-items-center">
+                    <div>
+                        <CardTitle>Отчеты по заданиям</CardTitle>
+                        <CardSubtitle>Общий список</CardSubtitle>
+                    </div>
+                    <div className="ml-auto d-flex no-block align-items-center">
+                        <div className="dl">
+                            <Input type="select" className="custom-select">
+                                <option value="0">За месяц</option>
+                                <option value="1">За неделю</option>
+                                <option value="2">За все время</option>
+                                
+                            </Input>
+                        </div>
+                    </div>
+                </div>
+                <Table className="no-wrap v-middle" responsive>
+                    <thead>
+                        <tr className="border-0">
+                            <th className="border-0">ID отчета</th>
+                            <th className="border-0">ID задания</th>
+                            <th className="border-0">Статус</th>
+                            <th className="border-0">User ID</th>
+                            <th className="border-0">Создан</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div className="d-flex no-block align-items-center">
+                                        <div className="">
+                                        <h5 className="mb-0 font-16 font-medium"></h5><span>13562</span></div>  
+                                </div>
+                            </td>
+                            <td><a href="#/task1">10234</a></td>
 
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-1*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2"> </i>
-            Alert
-          </CardTitle>
-                <CardBody className="">
-                    <div className="mt-3">
-                        <Alert color="primary">
-                            This is a primary alert— check it out!
-              </Alert>
-                        <Alert color="secondary">
-                            This is a secondary alert— check it out!
-              </Alert>
-                        <Alert color="success">
-                            This is a success alert— check it out!
-              </Alert>
-                        <Alert color="danger">
-                            This is a danger alert— check it out!
-              </Alert>
-                        <Alert color="warning">
-                            This is a warning alert— check it out!
-              </Alert>
-                        <Alert color="info">This is a info alert— check it out!</Alert>
-                        <Alert color="light">This is a light alert— check it out!</Alert>
-                        <Alert color="dark">This is a dark alert</Alert>
-                    </div>
-                </CardBody>
-            </Card>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-2*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2" />
-            Alert with Links
-          </CardTitle>
-                <CardBody className="">
-                    <div>
-                        <Alert color="primary">
-                            This is a primary alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="secondary">
-                            This is a secondary alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="success">
-                            This is a success alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="danger">
-                            This is a danger alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="warning">
-                            This is a warning alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="info">
-                            This is a info alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="light">
-                            This is a light alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                        <Alert color="dark">
-                            This is a dark alert with
-                <a href="/" className="alert-link">
-                                an example link
-                </a>
-                . Give it a click if you like.
-              </Alert>
-                    </div>
-                </CardBody>
-            </Card>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-3*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2" />
-            Alert with Additional content
-          </CardTitle>
-                <CardBody className="">
-                    <div>
-                        <Alert color="success">
-                            <h4 className="alert-heading">Well done!</h4>
-                            <p>
-                                Aww yeah, you successfully read this important alert message.
-                                This example text is going to run a bit longer so that you can
-                                see how spacing within an alert works with this kind of
-                                content.
-                </p>
-                            <hr />
-                            <p className="mb-0">
-                                Whenever you need to, be sure to use margin utilities to keep
-                                things nice and tidy.
-                </p>
-                        </Alert>
-                    </div>
-                </CardBody>
-            </Card>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-4*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2" />
-            Alert with Dissmissing
-          </CardTitle>
-                <CardBody className="">
-                    <div>
-                        <Alert
-                            color="info"
-                            isOpen={visible}
-                            toggle={onDismiss.bind(null)}
-                        >
-                            I am an alert and I can be dismissed!
-              </Alert>
-                    </div>
-                </CardBody>
-            </Card>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-5*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2" />
-            Alert with Uncontrolled [disable] Alerts
-          </CardTitle>
-                <CardBody className="">
-                    <div>
-                        <UncontrolledAlert color="info">
-                            I am an alert and I can be dismissed!
-              </UncontrolledAlert>
-                    </div>
-                </CardBody>
-            </Card>
-            {/* --------------------------------------------------------------------------------*/}
-            {/* Card-6*/}
-            {/* --------------------------------------------------------------------------------*/}
-            <Card>
-                <CardTitle className="bg-light border-bottom p-3 mb-0">
-                    <i className="mdi mdi-comment-processing-outline mr-2" />
-            Alerts without fade
-          </CardTitle>
-                <CardBody className="">
-                    <div>
-                        <Alert
-                            color="primary"
-                            isOpen={visible}
-                            toggle={onDismiss.bind(null)}
-                            fade={false}
-                        >
-                            I am a primary alert and I can be dismissed without animating!
-              </Alert>
-                        <UncontrolledAlert color="warning" fade={false}>
-                            I am an alert and I can be dismissed without animating!
-              </UncontrolledAlert>
-                    </div>
-                </CardBody>
-            </Card>
+                            <td>
+                                <Badge color="warning" >
+                                    Ожидает
+                                </Badge>
 
+                            </td>
+                            <td>5</td>
+                            <td>10.05.2020</td>
+                            <td className="blue-grey-text  text-darken-4 font-medium"><a href="#/report"><Button>Посмотреть</Button></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="d-flex no-block align-items-center">
+                                     
+                                    
+                                    <div className="">
+                                    <h5 className="mb-0 font-16 font-medium"></h5><span>103156</span></div>
+                                    
+                                </div>
+                            </td>
+                            <td><a href="#/task2">17622</a></td>
+
+                            <td>
+                                <Badge color="success" >
+                                    Проверено
+                                </Badge>
+
+                            </td>
+                            <td>0</td>
+                            <td>09.05.2020</td>
+                            <td className="blue-grey-text  text-darken-4 font-medium"><a href="#/report"><Button>Посмотреть</Button></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="d-flex no-block align-items-center">
+                                        <div className="">
+                                        <h5 className="mb-0 font-16 font-medium"></h5><span>15533</span></div>
+                                </div>
+                            </td>
+                            <td><a href="#/task3">19232</a></td>
+
+                            <td>
+                                <Badge color="success" >
+                                    Проверено
+                                </Badge>
+
+                            </td>
+                            <td>3</td>
+                            <td>11.05.2020</td>
+                            <td className="blue-grey-text  text-darken-4 font-medium"><a href="#/report"><Button>Посмотреть</Button></a></td>
+                        </tr>                      
+                    </tbody>
+                </Table>
+            </CardBody>
+        </Card >
+        
             {/* --------------------------------------------------------------------------------*/}
             {/* End Inner Div*/}
             {/* --------------------------------------------------------------------------------*/}

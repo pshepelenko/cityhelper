@@ -11,6 +11,9 @@ import TooltipComponent from '../views/ui-components/tooltip.jsx';
 import Task1 from '../views/ui-components/task1.jsx';
 import Task2 from '../views/ui-components/task2.jsx';
 import Task3 from '../views/ui-components/task3.jsx';
+import Report from '../views/ui-components/report.jsx';
+import Settings from '../views/ui-components/settings.jsx';
+
 
 var ThemeRoutes = [
   { 
@@ -26,46 +29,10 @@ var ThemeRoutes = [
     component: Alerts
   },
   {
-    path: '/badge',
-    name: 'Badges',
-    icon: 'mdi mdi-arrange-send-backward',
-    component: Badges
-  },
-  {
-    path: '/button',
-    name: 'Buttons',
-    icon: 'mdi mdi-toggle-switch',
-    component: Buttons
-  },
-  {
-    path: '/card',
-    name: 'Cards',
-    icon: 'mdi mdi-credit-card-multiple',
-    component: Cards
-  },
-  {
-    path: '/grid',
-    name: 'Grid',
-    icon: 'mdi mdi-apps',
-    component: LayoutComponent
-  },
-  {
-    path: '/pagination',
-    name: 'Pagination',
-    icon: 'mdi mdi-priority-high',
-    component: PaginationComponent
-  },
-  {
-    path: '/popover',
-    name: 'Popover',
-    icon: 'mdi mdi-pencil-circle',
-    component: PopoverComponent
-  },
-  {
-    path: '/ui-components/tooltip',
+    path: '/ui-components/settings',
     name: 'Настройки',
     icon: 'mdi mdi-image-filter-vintage',
-    component: TooltipComponent
+    component: Settings
   },
   {
     path: '/task1',
@@ -74,6 +41,10 @@ var ThemeRoutes = [
   {
     path: '/task2',
     component: Task2
+  },
+  {
+    path: '/report',
+    component: Report
   },
   {
     path: '/task3',

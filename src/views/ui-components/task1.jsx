@@ -50,17 +50,17 @@ const Cards = () => {
                     <Card body>
                         <CardTitle>Отчет №100820-3</CardTitle>
                         <CardText>Добрый день! Мы прибрались 9 августа. Фотографии в приложении</CardText>
-                        <Button>Проверить</Button>
+                        <a href="#/report" md="4"><Button block> Проверить</Button></a>
                     </Card>
                     <Card body>
                         <CardTitle>Отчет №100820-2</CardTitle>
                         <CardText>Здравствуйте! Приборка проведа 8 августа с утра. Фотографии с мешками с мусором прилагаем.</CardText>
-                        <Button>Проверить</Button>
+                        <a href="#/report" md="4"><Button block> Проверить</Button></a>
                     </Card>
                     <Card body>
                         <CardTitle>Отчет №100820-1</CardTitle>
                         <CardText>Делаем город чище :-)</CardText>
-                        <Button>Проверить</Button>
+                        <a href="#/report" md="4"><Button block> Проверить</Button></a>
                     </Card>
                 </Col>
             {/* --------------------------------------------------------------------------------*/}
