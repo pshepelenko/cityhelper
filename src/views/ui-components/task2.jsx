@@ -33,15 +33,13 @@ const Cards = () => {
                     <Card>
                         <CardImg top width="100%" src={img1} alt="Card image cap" />
                         <CardBody>
-                            <CardTitle>Убрать мусор на улице Московской</CardTitle>
-                            <CardText><b>Категория:</b> Экология</CardText>
-                            <CardText><b>Описание:</b> Соберите мусор на улице Московской. Процесс можно заснять на видео либо сфотографировать пакеты с мусором.</CardText>
+                            <CardTitle>Опрос по поводу изменения транспортной развязки на ул. Кирова</CardTitle>
+                            <CardText><b>Категория:</b> Опросы</CardText>
+                            <CardText><b>Описание:</b> Пожалуйста пройдите опрос по ссылке: <a href="https://docs.google.com/forms/u/0/"> Ссылка на опрос</a></CardText>
                             <CardText><b>Награда:</b> 10 баллов</CardText>
                             <CardText><b>Дата старта:</b> 1 мая 2020</CardText>
                             <CardText><b>Дата окончания:</b> 1 июня 2021</CardText>
-                            <CardText>
-                                <small className="text-muted">Last updated 3 mins ago</small>
-                            </CardText>
+                            
                         </CardBody>
                     </Card>
                 </Col>
