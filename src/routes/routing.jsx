@@ -13,7 +13,7 @@ import Task2 from '../views/ui-components/task2.jsx';
 import Task3 from '../views/ui-components/task3.jsx';
 import Report from '../views/ui-components/report.jsx';
 import Settings from '../views/ui-components/settings.jsx';
-
+import TaskCreate from '../views/ui-components/taskcreate.jsx';
 
 var ThemeRoutes = [
   { 
@@ -49,6 +49,14 @@ var ThemeRoutes = [
   {
     path: '/task3',
     component: Task3
+  },
+  {
+    path: '/taskcreate',
+    component: TaskCreate
+  },
+  {
+    path: '/grid',
+    component: LayoutComponent
   },
   { path: '/', pathTo: '/dashboard', name: 'Dashboard', redirect: true }
 ];

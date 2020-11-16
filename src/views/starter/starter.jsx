@@ -77,7 +77,7 @@ const Starter = () => {
       
       <br />
       
-            <Button>Создать задание</Button> 
+        <a href="#/taskcreate"><Button>Создать задание</Button></a> 
             <Row></Row>
             <Row>
                 <Col sm={12}>
